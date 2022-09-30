@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/img/calendario.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>Calendario Días Laborables</title>
+</head>
+
+<body>
+    <h1 class="text-center my-5">Calendario Días Laborales</h1>
+    <hr>
+    <!-- Contenedor -->
+    <section class="container text-center">
+        <!-- Fila 1 (labels de día, mes y año) -->
+        <div class="row mb-2 mt-3">
+            <div class="col">
+                <!-- Día -->
+                <label for="inputDia">Ingresa el día</label>
+            </div>
+            <div class="col">
+                <label for="inputMes">Ingresa el mes</label>
+            </div>
+            <div class="col">
+                <label for="inputAnio">Ingresa el año</label>
+            </div>
+        </div>
+        <!-- Fila 2 (inputs de día, mes y año) -->
+        <div class="row mb-5">
+            <div class="col">
+            <!-- Día -->
+                <input type="number" class="inputFecha py-1" id="inputDia" placeholder="dd" style="text-align:center" min="1" max="31">
+            </div>
+            <!-- Mes -->
+            <div class="col">
+                <input type="number" class="inputFecha py-1" id="inputMes" placeholder="mm" style="text-align:center" min="1" max="12">
+            </div>
+            <!-- Año -->
+            <div class="col">
+                <input type="number" class="inputFecha py-1" id="inputAnio" placeholder="aaaa" style="text-align:center" min="1" max="9999">
+            </div>
+        </div>
+        <!-- Fila 3 (Botón de Calcular) -->
+        <div class="row mb-5">
+            <div class="col">
+                <button type="button" class="btn btn-outline-warning btn-lg" onclick="calendarioLaboral()" id="botonCalendario"><i class="fas fa-calendar-alt"></i> Calcular</button>
+            </div>
+        </div>
+        <!-- Fila 4 (Input para mostrar el resultado) -->
+        <div class="row">
+            <div class="col">
+                <p class="pantallaResultado" id="resultadoCal"></p>
+                <!-- <input type="text" class="pantallaResultado" id="resultadoCal"> -->
+            </div>
+        </div>
+    </section>
+
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+
+</html>
