@@ -1,5 +1,31 @@
 body {
     background-color: #ffffff;
-    background-image: background-color: #ffffff;
-background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23e3dc08' fill-opacity='0.27'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cg fill='%23e3dc08' fill-opacity='0.23'%3E%3Cpolygon fill-rule='evenodd' points='8 4 12 6 8 8 6 12 4 8 0 6 4 4 6 0 8 4'/%3E%3C/g%3E%3C/svg%3E");
+}
+#botonCalendario {
+    background-color: white;
+    color:#8d8806;
+    border: 2px solid #8d8806;
+    border-radius: 4px;
+    font-size: 20px;
+    padding: 8px;
+    ;
+}
+#botonCalendario:hover {
+    background-color: #8d8806;
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#botonCalendario:active{
+    background-color: black;
+    color: white;
+}
+
+input{
+    width: 100px;
+}
+
+#resultadoCal{
+    font-weight: bold;
+    font-size: 24px;
 }

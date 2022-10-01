@@ -18,41 +18,31 @@
     <hr>
     <!-- Contenedor -->
     <section class="container text-center">
-        <!-- Fila 1 (labels de día, mes y año) -->
-        <div class="row mb-2 mt-3">
-            <div class="col">
-                <!-- Día -->
-                <label for="inputDia">Ingresa el día</label>
-            </div>
-            <div class="col">
-                <label for="inputMes">Ingresa el mes</label>
-            </div>
-            <div class="col">
-                <label for="inputAnio">Ingresa el año</label>
-            </div>
-        </div>
-        <!-- Fila 2 (inputs de día, mes y año) -->
+        <!-- Fila 1 (Labels e inputs de día, mes y año) -->
         <div class="row mb-5">
-            <div class="col">
+            <div class="col-sm-4">
             <!-- Día -->
-                <input type="number" class="inputFecha py-1" id="inputDia" placeholder="dd" style="text-align:center" min="1" max="31">
+            <label for="inputDia">Ingresa el día</label><br>
+                <input type="number" class="inputFecha py-1" id="inputDia" placeholder=" dd " style="text-align:center" min="1" max="31" required>
             </div>
             <!-- Mes -->
-            <div class="col">
-                <input type="number" class="inputFecha py-1" id="inputMes" placeholder="mm" style="text-align:center" min="1" max="12">
+            <div class="col-sm-4">
+                <label for="inputMes">Ingresa el mes</label><br>
+                <input type="number" class="inputFecha py-1" id="inputMes" placeholder=" mm " style="text-align:center" min="1" max="12" required>
             </div>
             <!-- Año -->
-            <div class="col">
-                <input type="number" class="inputFecha py-1" id="inputAnio" placeholder="aaaa" style="text-align:center" min="1" max="9999">
+            <div class="col-sm-4">
+                <label for="inputAnio">Ingresa el año</label><br>
+                <input type="number" class="inputFecha py-1" id="inputAnio" placeholder=" aaaa " style="text-align:center" min="1" max="9999" required>
             </div>
         </div>
-        <!-- Fila 3 (Botón de Calcular) -->
+        <!-- Fila 2 (Botón de Calcular) -->
         <div class="row mb-5">
             <div class="col">
-                <button type="button" class="btn btn-outline-warning btn-lg" onclick="calendarioLaboral()" id="botonCalendario"><i class="fas fa-calendar-alt"></i> Calcular</button>
+                <button type="button" onclick="calendarioLaboral()" id="botonCalendario"><i class="fas fa-calendar-alt"></i> Calcular</button>
             </div>
         </div>
-        <!-- Fila 4 (Input para mostrar el resultado) -->
+        <!-- Fila 3 (Input para mostrar el resultado) -->
         <div class="row">
             <div class="col">
                 <p class="pantallaResultado" id="resultadoCal"></p>
